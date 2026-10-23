@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Birthday, Khushi! 🎂</title>
+  <meta name="description" content="A little birthday surprise, made with love." />
+  <meta name="theme-color" content="#ffd9e8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Caveat:wght@500;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="locked">
+
+  <!-- floating hearts + sparkles background (filled by script.js) -->
+  <div class="floaties" id="floaties" aria-hidden="true"></div>
+
+  <!-- music control -->
+  <button class="music-btn" id="musicBtn" aria-label="Play soft music" title="Play / pause music">
+    <span class="music-icon" id="musicIcon">♪</span>
+    <span class="music-text" id="musicText">Play music</span>
+  </button>
+
+  <!-- ===================== WELCOME SCREEN ===================== -->
+  <section class="welcome" id="welcome">
+    <div class="welcome-card">
+      <div class="bow-top" aria-hidden="true">🎀</div>
+      <h1 class="script big">Happy Birthday, Khushi! 🎂🎀</h1>
+      <p class="welcome-line">10 years of friendship, a million memories, and a lifetime of love.</p>
+
+      <button class="gift" id="giftBtn" aria-label="Open your little surprise">
+        <span class="gift-lid"></span>
+        <span class="gift-box"></span>
+        <span class="gift-ribbon-v"></span>
+        <span class="gift-bow">🎀</span>
+      </button>
+
+      <p class="hand small-note">Made with love, just for you, by your forever bestie. 💗</p>
+      <button class="btn" id="openBtn">Open Your Little Surprise 💌</button>
+    </div>
+  </section>
+
+  <!-- ===================== MAIN SITE ===================== -->
+  <main class="site" id="site" hidden>
+
+    <!-- HERO -->
+    <header class="hero">
+      <div class="hero-text">
+        <p class="hand tiny">✨ for my favourite girl ✨</p>
+        <h2 class="script huge">Happy Birthday,<br />Khushi</h2>
+        <p class="hero-sub">Ten years of you &amp; me. Scroll down, there's a little world made just for you. 💗</p>
+        <a href="#gallery" class="btn btn-soft">Start the memory book ↓</a>
+      </div>
+      <figure class="polaroid hero-polaroid" style="--tilt:3deg">
+        <span class="tape" aria-hidden="true"></span>
+        <img src="images/s01-pink-kurta.jpg" alt="Khushi smiling in a pink kurta" />
+        <figcaption class="hand">Main character since day one ✨</figcaption>
+        <span class="deco d1" aria-hidden="true">🎀</span>
+        <span class="deco d2" aria-hidden="true">✨</span>
+      </figure>
+    </header>
+
+    <!-- GALLERY -->
+    <section class="section" id="gallery">
+      <h2 class="script title">Pretty Girl, Prettier Soul 🌷</h2>
+      <p class="section-sub">Tap any photo to see it up close.</p>
+
+      <div class="gallery">
+        <figure class="polaroid" style="--tilt:-3deg">
+          <span class="tape" aria-hidden="true"></span>
+          <img src="images/s03-bench.jpg" alt="Khushi sitting on a bench surrounded by flowers" loading="lazy" />
+          <figcaption class="hand">Pretty girl, prettier soul 🎀</figcaption>
+        </figure>
+
+        <figure class="polaroid" style="--tilt:2.5deg">
+          <img src="images/s06-glasses-peace.jpg" alt="Khushi in glasses making a peace sign" loading="lazy" />
+          <figcaption class="hand">My favourite human, always.</figcaption>
+          <span class="deco d3" aria-hidden="true">🌸</span>
+        </figure>
+
+        <figure class="polaroid" style="--tilt:-1.5deg">
+          <span class="tape" aria-hidden="true"></span>
+          <img src="images/s02-balloons.jpg" alt="Khushi smiling in front of golden balloons" loading="lazy" />
+          <figcaption class="hand">A face full of sunshine ☀️</figcaption>
+        </figure>
+
+        <figure class="polaroid" style="--tilt:3deg">
+          <img src="images/s07-yellow-suit.jpg" alt="Khushi in a yellow suit with a pink dupatta" loading="lazy" />
+          <figcaption class="hand">The girl who makes life a little brighter 🌷</figcaption>
+          <span class="deco d2" aria-hidden="true">✨</span>
+        </figure>
+
+        <figure class="polaroid" style="--tilt:-2.5deg">
+          <span class="tape" aria-hidden="true"></span>
+          <img src="images/s05-pink-diner.jpg" alt="Khushi in a pink tee in a pink diner" loading="lazy" />
+          <figcaption class="hand">My Khushi, my happiness. 💗</figcaption>
+        </figure>
+
+        <figure class="polaroid" style="--tilt:1.5deg">
+          <img src="images/s08-black-sweatshirt.jpg" alt="Khushi in a black sweatshirt looking away and smiling" loading="lazy" />
+          <figcaption class="hand">Soft smile, softer heart 🤍</figcaption>
+          <span class="deco d1" aria-hidden="true">🎀</span>
+        </figure>
+
+        <figure class="polaroid" style="--tilt:-3deg">
+          <span class="tape" aria-hidden="true"></span>
+          <img src="images/s04-bench-looking.jpg" alt="Khushi on a bench looking to the side" loading="lazy" />
+          <figcaption class="hand">Dreamy girl, dreamy day ☁️</figcaption>
+        </figure>
+
+        <figure class="polaroid" style="--tilt:2deg">
+          <img src="images/s10-guitar-glasses.jpg" alt="Khushi in guitar-shaped party glasses" loading="lazy" />
+          <figcaption class="hand">Party mode: always on 🎸</figcaption>
+          <span class="deco d3" aria-hidden="true">🌸</span>
+        </figure>
+
+        <figure class="polaroid" style="--tilt:-2deg">
+          <span class="tape" aria-hidden="true"></span>
+          <img src="images/s09-brown-tee.jpg" alt="Khushi sitting at a table looking off to the side" loading="lazy" />
+          <figcaption class="hand">Effortlessly you ✨</figcaption>
+        </figure>
+
+        <figure class="polaroid" style="--tilt:3deg">
+          <img src="images/s11-pink-jacket.jpg" alt="Khushi in a pink jacket and glasses" loading="lazy" />
+          <figcaption class="hand">10 years, countless memories, still my person.</figcaption>
+          <span class="deco d2" aria-hidden="true">💗</span>
+        </figure>
+      </div>
+    </section>
+
+    <!-- TIMELINE (edit the text below to add your real memories) -->
+    <section class="section" id="timeline">
+      <h2 class="script title">10 Years of Us 🫶🏻</h2>
+      <ol class="timeline">
+        <li class="reveal">
+          <span class="dot">🌱</span>
+          <div class="note">
+            <h3 class="hand">The beginning</h3>
+            <p>when we had no idea we'd become this close.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="dot">🎈</span>
+          <div class="note">
+            <h3 class="hand">The silly moments</h3>
+            <p>the laughs, the jokes, the chaos.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="dot">📷</span>
+          <div class="note">
+            <h3 class="hand">The memories</h3>
+            <p>all the little moments that became everything.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="dot">💗</span>
+          <div class="note">
+            <h3 class="hand">Today</h3>
+            <p>10 years later, and you're still my favourite person.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="dot">✨</span>
+          <div class="note">
+            <h3 class="hand">Forever</h3>
+            <p>here's to all the memories we haven't made yet.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- LETTER -->
+    <section class="section" id="letter-section">
+      <h2 class="script title">A Letter, Just for You 💌</h2>
+      <p class="section-sub">Tap the envelope to open it.</p>
+
+      <div class="letter-wrap">
+        <button class="envelope" id="envelope" aria-expanded="false" aria-controls="letter">
+          <span class="env-back"></span>
+          <span class="env-flap"></span>
+          <span class="env-front"></span>
+          <span class="env-heart">💗</span>
+        </button>
+
+        <article class="letter" id="letter" aria-hidden="true">
+          <span class="letter-heart h1" aria-hidden="true">♡</span>
+          <span class="letter-heart h2" aria-hidden="true">♡</span>
+          <span class="letter-heart h3" aria-hidden="true">♡</span>
+          <div class="letter-text">
+            <p>Dear Khushi, 💗</p>
+            <p>Happy Birthday to my favourite girl!</p>
+            <p>Ten years. Just think about it — ten whole years of friendship, memories, laughter, and having you as such a special part of my life.</p>
+            <p>I'm so grateful that life gave me you. I hope you always remember how precious you are, how beautiful your heart is, and how much happiness you bring to the people around you.</p>
+            <p>I hope this new chapter brings you the kind of happiness that stays, the kind of love that feels safe, the kind of success you've dreamed of, and countless little reasons to smile every day.</p>
+            <p>No matter how much we grow, how life changes, or how busy our worlds become, I hope we always find our way back to the friendship we've built over these ten years.</p>
+            <p>You deserve all the beautiful things this world has to offer. Keep smiling, keep shining, and never forget how loved you are.</p>
+            <p>Happy Birthday, Khushi Rathi. You're not just a part of my memories; you're one of my favourite parts of life.</p>
+            <p>Here's to you, to us, and to a million more memories. 🎀</p>
+            <p class="sign">Forever your bestie. ♡</p>
+          </div>
+          <button class="btn btn-soft close-letter" id="closeLetter">Close letter 💌</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- QUOTES -->
+    <section class="section" id="quotes">
+      <h2 class="script title">Little Reminders for You 🌷</h2>
+      <div class="quotes">
+        <blockquote class="quote reveal">Some people make life beautiful just by being in it. You're one of them.</blockquote>
+        <blockquote class="quote reveal">If I could choose my best friend in every lifetime, I'd still choose you.</blockquote>
+        <blockquote class="quote reveal">Ten years down, forever to go.</blockquote>
+        <blockquote class="quote reveal">You're a little piece of happiness in human form.</blockquote>
+        <blockquote class="quote reveal">May the world be as gentle with you as your heart is with everyone else.</blockquote>
+        <blockquote class="quote reveal">You deserve a life full of little joys, big dreams, and unconditional love.</blockquote>
+        <blockquote class="quote reveal">No matter where life takes us, you'll always have a home in me.</blockquote>
+        <blockquote class="quote reveal">A thousand memories, one irreplaceable friendship.</blockquote>
+      </div>
+    </section>
+
+    <!-- WISH -->
+    <section class="section wish-section" id="wish">
+      <h2 class="script title">A Little Birthday Surprise 🎁</h2>
+      <button class="btn big-btn" id="wishBtn">Click for a Birthday Wish ✨</button>
+      <p class="wish-card" id="wishText" aria-live="polite">Go on, tap it. I have a few wishes saved up for you. 💗</p>
+    </section>
+
+    <!-- MEMORY WALL -->
+    <section class="section" id="memories">
+      <h2 class="script title">Little Moments, Big Memories 📸</h2>
+      <div class="wall">
+        <figure class="polaroid wall-big" style="--tilt:-2deg">
+          <span class="tape" aria-hidden="true"></span>
+          <img src="images/t01-us-peace.jpg" alt="The two of us making peace signs in a shop" loading="lazy" />
+          <figcaption class="hand">Peace signs &amp; best friends ✌️</figcaption>
+        </figure>
+        <figure class="polaroid wall-big" style="--tilt:2deg">
+          <span class="tape" aria-hidden="true"></span>
+          <img src="images/t02-us-mirror.jpg" alt="The two of us taking a mirror selfie" loading="lazy" />
+          <figcaption class="hand">Always us 🤍</figcaption>
+        </figure>
+        <figure class="polaroid wall-small" style="--tilt:-4deg">
+          <img src="images/s01-pink-kurta.jpg" alt="Khushi in a pink kurta" loading="lazy" />
+        </figure>
+        <figure class="polaroid wall-small" style="--tilt:3deg">
+          <img src="images/s06-glasses-peace.jpg" alt="Khushi making a peace sign" loading="lazy" />
+        </figure>
+        <figure class="polaroid wall-small" style="--tilt:-2deg">
+          <img src="images/s03-bench.jpg" alt="Khushi on a flower-covered bench" loading="lazy" />
+        </figure>
+      </div>
+
+      <p class="closing-note hand">Photos may fade, years may pass, and life may change, but the love behind these memories will always mean something special.</p>
+
+      <div class="finale">
+        <h2 class="script huge">Happy Birthday, Khushi! 🎂💗</h2>
+        <p class="hand finale-line">10 years of friendship. A lifetime of love. Always us. ♡</p>
+        <div class="heart-row" aria-hidden="true"><span>💗</span><span>💖</span><span>💗</span><span>💖</span><span>💗</span></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="script">Made with endless love by your bestie. 🎀</p>
+    </footer>
+  </main>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lb-close" id="lbClose" aria-label="Close photo">✕</button>
+    <figure>
+      <img id="lbImg" alt="" />
+      <figcaption class="hand" id="lbCap"></figcaption>
+    </figure>
+  </div>
+
+  <div class="confetti-layer" id="confetti" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
